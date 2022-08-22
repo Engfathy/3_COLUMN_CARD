@@ -1,0 +1,177 @@
+/* Global rules */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Big Shoulders Display', 'cursive';
+    font-family: 'Lexend Deca', sans-serif;
+}
+/* End */
+/* main style */
+
+.card {
+    width: 900px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,  minmax(200px, 1fr));
+}
+
+@media (max-width:676px) {
+    body {
+        height: auto;
+    }
+    .card {
+        margin: 80px 40px 80px 40px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.container .col-1 {
+    background-color: var(--Bright-orange);
+    padding: 40px 70px 40px 40px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius:8px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+}
+@media (max-width:676px) {
+    .container .col-1 {
+        border-bottom-left-radius:0 ;
+        border-top-right-radius: 8px;
+    }
+}
+
+.container .col-1 h1 {
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-family: 'Big Shoulders Display', 'cursive';
+}
+
+.container .col-1 p {
+    color: var(--Transparent-white-paragraphs);
+    line-height: 1.8;
+    margin-bottom: 80px;
+    font-size: 15px;
+}
+
+.container .col-1 button {
+    color: var(--Bright-orange);
+    background-color: white;
+    border: 2px solid white;
+    padding: 15px;
+    width: 150px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.container .col-1 button:hover {
+    background-color: var(--Bright-orange);
+    color: white;
+}
+.container .col-2 {
+    background-color: var(--Dark-cyan);
+    padding: 40px 70px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container .col-2 h1 {
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-family: 'Big Shoulders Display', 'cursive';
+}
+
+.container .col-2 p {
+    color: var(--Transparent-white-paragraphs);
+    line-height: 1.8;
+    margin-bottom: 80px;
+    font-size: 15px;
+}
+
+.container .col-2 button {
+    color: var(--Dark-cyan);
+    background-color: white;
+    border: 2px solid white;
+    padding: 15px;
+    width: 150px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.container .col-2 button:hover {
+    background-color: var(--Dark-cyan);
+    color: white;
+}
+.container .col-3 {
+    background-color: var(--Very-dark-cyan);
+    padding: 40px 70px 40px 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius:8px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+@media (max-width:676px) {
+    .container .col-3 {
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0;
+    }
+}
+
+.container .col-3 h1 {
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-family: 'Big Shoulders Display', 'cursive';
+}
+
+.container .col-3 p {
+    color: var(--Transparent-white-paragraphs);
+    line-height: 1.8;
+    margin-bottom: 80px;
+    font-size: 15px;
+}
+
+.container .col-3 button {
+    color: var(--Very-dark-cyan);
+    background-color: white;
+    border: 2px solid white;
+    padding: 15px;
+    width: 150px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.container .col-3 button:hover {
+    background-color: var(--Very-dark-cyan);
+    color: white;
+}
+/* end */
